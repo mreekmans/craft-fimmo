@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Fimmo plugin for Craft CMS 3.x
+ *
+ * Fimmo Settings.twig
+ *
+ * @author    Akimm
+ * @copyright Copyright (c) 2018 Akimm
+ * @link      wwwmakimm.be
+ * @package   Fimmo
+ * @since     0.0.1
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("akimmfimmo\\fimmo\\assetbundles\\fimmo\\FimmoAsset") %}
+
+{{ forms.textField({
+    label: 'Some Field',
+    instructions: 'Enter some setting here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: settings['someAttribute']})
+}}

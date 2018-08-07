@@ -1,0 +1,43 @@
+{
+    "name": "akimmfimmo/fimmo",
+    "description": "Integrate Fortisimmo properties",
+    "type": "craft-plugin",
+    "version": "0.0.1",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "fimmo"
+    ],
+    "support": {
+        "docs": "https://github.com/mreekmans/craft-fimmo/fimmo/blob/master/README.md",
+        "issues": "https://github.com/mreekmans/craft-fimmo/fimmo/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Akimm",
+            "homepage": "wwwmakimm.be"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "akimmfimmo\\fimmo\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Fimmo",
+        "handle": "fimmo",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/mreekmans/craft-fimmo/fimmo/master/CHANGELOG.md",
+        "components": {
+            "fimmoService": "akimmfimmo\\fimmo\\services\\FimmoService"
+        },
+        "class": "akimmfimmo\\fimmo\\Fimmo"
+    }
+}
